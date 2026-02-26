@@ -31,6 +31,13 @@
    
       
     }
+    img {
+      margin-bottom: 20px;
+    }
+    .description {
+      
+      margin-bottom: 20px;
+    }
     body {
       margin: 0;
       background: #F3ECDC;
@@ -152,7 +159,20 @@
         .ingredients-list li::marker {
           color: #9aa3a3;
         }
-      
+      .instruction-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+       margin-top: 8px;
+       }
+       .preparation-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+       margin-top: 8px;
+       }
   </style>
 </head>
 <body>
@@ -170,12 +190,11 @@
   <p class="description">
     An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
   to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-</br>
-  Preparation time <br>
-</br>
-  Total: Approximately 10 minutes
+
+  <h3 class="section-title preparation-title">Preparation time</h3>
+  <p class="description">Total: Approximately 10 minutes
   Preparation: 5 minutes
-  Cooking: 5 minutes<br>
+  Cooking: 5 minutes</p>
 
   <h3 class="section-title">Ingredients</h3>
     <ul class="Ingredients-list">
@@ -187,24 +206,23 @@
     </ul>
 
 
-  Instructions<br>
-</br>
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.<br>
-</br>
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.<br>
-</br>
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.<br>
-</br>
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.<br>
-</br>
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.<br>
-</br>
-  Enjoy: Serve hot, with additional salt and pepper if needed.<br>
-</br>
+ <h3 class="section-title instruction-title">Instructions</h3>
+
+ <p class="description">Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</p>
+
+ <p class="description">Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</p>
+
+  <p class="description">Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</p>
+
+ <p class="description">Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</p>
+
+  <p class="description">Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.
+ Serve hot, with additional salt and pepper if needed.</p>
+
 <div class="nutrition-box">
   <h2 class="nutrition-title">Nutrition</h2>
   <p class="nutrition-description">The nutritional values below are approximate and can vary based on the specific ingredients and portion sizes used.</p>
