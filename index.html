@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="sylesheet" type="image/png" sizes="32x32" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="sylesheet" href="style.css">
+ 
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+    .card img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 20px;
+    }     
+    body {
+      background-color: #f3e5d8;
+      display: flex: 
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+   
+      
+    }
+    body {
+      margin: 0;
+      background: #F3ECDC;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 16px;
+    }
+ .card {
+      background-color: #CFE5D5;
+      width: 700px;
+      padding: 40px;
+      border-radius: 75px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+     
+    }
+    @font-face {
+      font-family: 'Sacramento';
+      src: url('assets/fonts/Sacramento-Regular.ttf'); 
+    }
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 52px;
+      letter-spacing: 1px;
+    }
+    .title-box {
+      background-color: #72e67c
+      padding: 16 px 24px;
+      border-radius: 20px;
+      width: fit-content;
+      margin: 0 auto 24px;;
+      text-align: center;
+    }
+    .title-box h1 {
+      margin: 0;
+    }
+
+     .description {
+      font-size: 16px;
+      color: hsl(250, 94%, 6%);
+      margin-bottom: 20px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(250, 94%, 6%); }
+ 
+    .ingredients {
+      font-size: 20px;
+      font-weight: 700px;
+
+    }
+    .nutrition-box {
+      margin-top: 24px;
+      padding: 16px 18px;
+      background: #ffffff;
+      border: 2px solid #1f1f1f;
+      border-radius: 12px;
+      max-width: 320px;
+    }
+    .nutrition-title {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+      font-weight: 700px;
+      border-bottom: 2px solid #1f1f1f;
+      padding-bottom: 8px;
+    }
+    .nutrition-des {
+      margin: 0 0 12px 0;
+      font-size: 13px;
+     line-height: 1.4;
+    }
+    .nutrition-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-top: 1px solid #1f1f1f;
+      font-size: 14px;
+    }
+    .nutrition-row span: last-child{
+      font-weight: 700;
+    }
+    .nutrition-box {
+      max-width: 95%;
+      margin: 32px auto;
+      padding: 20px;
+      border:2px solid #1f1f1f;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+       }
+
+       .section-title {
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        position: relative;
+
+       }
+       .ingredient-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: #d8d8d8;
+        margin-top: 8px;
+       }
+
+       .ingredients-list {
+        list-style-type: circle;
+        padding-left: 20px;
+       }
+        .ingredients-list li {
+          margin-bottom: 12px;
+          font-size: 16px;
+          line-height: 1.6;
+        }
+        .ingredients-list li::marker {
+          color: #9aa3a3;
+        }
+      
+  </style>
+</head>
+<body>
+  
+<div class="container">
+  <div class="card">
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Shenry717" rel="noopener noreferrer">Shannon</a>.
+  </div>
+  <div class="title-box">
+    <h1>Simple Omelette Recipe</h1>
+  </div>
+  <img src="assets/images/image-omelette.jpeg" alt="A fluffy omelette folded in half on a white plate, filled with melted cheese and fresh herbs, placed on a light wooden table surface">
+  <p class="description">
+    An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+</br>
+  Preparation time <br>
+</br>
+  Total: Approximately 10 minutes
+  Preparation: 5 minutes
+  Cooking: 5 minutes<br>
+
+  <h3 class="section-title">Ingredients</h3>
+    <ul class="Ingredients-list">
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+
+
+  Instructions<br>
+</br>
+  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.<br>
+</br>
+  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.<br>
+</br>
+  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.<br>
+</br>
+  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.<br>
+</br>
+  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.<br>
+</br>
+  Enjoy: Serve hot, with additional salt and pepper if needed.<br>
+</br>
+<div class="nutrition-box">
+  <h2 class="nutrition-title">Nutrition</h2>
+  <p class="nutrition-description">The nutritional values below are approximate and can vary based on the specific ingredients and portion sizes used.</p>
+  <div class="nutrition-row">
+  <span>Calories</span><span>277kcal</span>
+  </div>
+  <div class="nutrition-row">
+    <span>Carbohydrates</span><span>0g</span>
+  </div>
+  <div class="nutrition-row">
+    <span>Protein</span><span>20g</span>
+  </div>
+  <div class="nutrition-row">
+  <span>Fat</span><span>22g</span>
+  </div>
+</body>
+</html>
